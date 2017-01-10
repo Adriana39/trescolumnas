@@ -1,0 +1,174 @@
+@import url(css/normalize.css);
+@import url(css/grid.css);
+@import url(css/base.css);
+
+/* Estilos del proyecto */
+
+body {
+	font-family: Tahoma;
+	color: #060606; 
+	background-color: #f8d5b8;
+}
+
+.central {
+	margin-left: 2%;
+	margin-top: 2%;
+	margin-bottom: 2%;
+	position: relative;
+}
+.col-amarilla, .col-magenta, .col-violeta {
+	/*width: 300px;*/
+	width: 30%;
+	height: 420px;
+	margin-left: 2%;
+	font-size: 1em;
+	text-align: center;
+	border-radius: 10px;
+	padding-top: 15px;
+}
+.col-amarilla {
+	background-color: #f4b408;
+}
+.col-magenta {
+	background-color: #e84097;
+}
+.col-violeta {
+	background-color: #d012f0;
+}
+
+.col-amarilla p, .col-magenta p, .col-violeta p {
+	max-height: 118px;
+}
+.botones {
+	margin-left: 60px;
+	margin-top: -70px;
+	position: absolute;
+	
+}
+.btn-columna-1 {
+	display: inline-block;
+	text-decoration: none;
+	color: #060606;
+	background-image: url(img/boton-columna-1.png);
+	background-color: #f4b408;
+	background-position: top center;
+	padding: 10px 30px;
+	margin-top: 10px;
+	border: 0.5px solid black;
+	border-radius: 8px;
+}
+.btn-columna-2 {
+	display: inline-block;
+	text-decoration: none;
+	color: #060606;
+	background-image: url(img/boton-columna-2.png);
+	background-color: #e84097;
+	background-position: top center;
+	padding: 10px 30px;
+	margin-top: 5px;
+	border: 0.5px solid black;
+	border-radius: 8px;
+}
+.btn-columna-3 {
+	display: inline-block;
+	text-decoration: none;
+	color: #060606;
+	background-image: url(img/boton-columna-3.png);
+	background-color: #d012f0;
+	background-position: top center;
+	padding: 10px 30px;
+	margin-top: 5px;
+	border: 0.5px solid black;
+	border-radius: 8px;
+}
+.btn-columna-1:hover {
+	box-shadow: 0 2px 2px 1px rgba(0,0,0,0.5);
+	color: #10a878;
+}
+.btn-columna-2:hover {
+	box-shadow: 0 2px 2px 1px rgba(0,0,0,0.5);
+	color: #10a878;
+}
+.btn-columna-3:hover {
+	box-shadow: 0 2px 2px 1px rgba(0,0,0,0.5);
+	color: #10a878;
+}
+
+
+/*******************************************************************
+	MEDIA QUERIES BREAKPOINTS
+********************************************************************/
+
+/* para pantallas menores o iguales a 960px de ancho */
+@media only screen and (max-width: 960px) {
+	
+}
+@media only screen and (max-width: 540px) {
+	
+}
+@media only screen and (max-width: 768px){
+	.col-amarilla, .col-magenta, .col-violeta {
+		font-size: 0.75em;
+		height: 360px;
+	}
+	.btn-columna-1 {
+		font-size: 0.75em;
+	}
+	.btn-columna-2 {
+		font-size: 0.75em;
+		margin-left: 50px;
+	}
+	.btn-columna-3 {
+		font-size: 0.75em;
+		margin-left: 100px;
+	}
+}
+@media only screen and (max-width: 695px){
+		
+	.col-amarilla, .col-magenta, .col-violeta {
+		height: 320px;
+	}
+	
+	.col-violeta p {
+		max-height: 60px;
+	}
+	.botones {
+		max-width: 340px;
+		/*margin-left: 25px;*/
+	}
+	.btn-columna-1, .btn-columna-2, .btn-columna-3 {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	
+}
+@media only screen and (max-width: 480px) {
+	.botones {
+		max-width: 260px;
+	}
+	.btn-columna-2 {
+		margin-top: -180px;
+		margin-left: 40px;
+		
+	}
+	.btn-columna-3 {
+		margin-top: -400px; /*queda corrido hacia abajo*/
+	}
+}
+@media only screen and (max-width: 375px) {
+	/*.btn-columna-2 {
+		margin-top: 0; /*no lo toma
+	}*/	
+}
+@media only screen and (max-width: 320px) {
+	.btn-columna-1 {
+		padding: 10px 5px;
+	}
+	.btn-columna-2 {
+		padding: 10px 2.5px;
+	}
+	.btn-columna-3 {
+		/*margin-top: 5px;*/
+		padding: 10px 5px;
+	}
+}
